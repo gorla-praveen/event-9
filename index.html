@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event HTML-5 Template</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"/>
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="https://themewagon.github.io/eventz/assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-area header-transparent">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="https://themewagon.github.io/eventz/assets/img/logo/logo.png" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Main-menu -->
+                        <div class="col-xl-8 col-lg-8 col-md-8">
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="spakers.html">Speakers</a></li>
+                                        <li><a href="schedule.html">Schedule</a></li>
+                                        <li><a href="blog.html">Blog</a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="blog_details.html">Blog Details</a></li>
+                                                <li><a href="elements.html">Element</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Header-btn -->
+                        <div class="col-xl-2 col-lg-2 col-md-3">
+                            <div class="header-btn d-none d-lg-block f-right">
+                                <a href="#" class="btn header-btn1">Get Your Ticket</a>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Slider Area -->
+    <div class="slider-area">
+        <div class="slider-active">
+            <!-- Slide 1 -->
+            <div class="single-slider slider-height d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-9 col-md-10">
+                            <div class="hero__caption">
+                                <span>Committed to success</span>
+                                <h1>Digital Conference <br>For Designers</h1>
+                                <div class="hero__btn">
+                                    <a href="industries.html" class="btn hero-btn">Download</a>
+                                    <a href="https://www.youtube.com/watch?v=up68UAfH0d0" class="popup-video hero-btn2">
+                                        <i class="fas fa-play"></i> Story Video <br>Watch
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="single-slider slider-height slider-height2 d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-9 col-md-10">
+                            <div class="hero__caption">
+                                <span>Committed to success</span>
+                                <h1>Digital Conference <br>For Designers</h1>
+                                <div class="hero__btn">
+                                    <a href="industries.html" class="btn hero-btn">Download</a>
+                                    <a href="https://www.youtube.com/watch?v=up68UAfH0d0" class="popup-video hero-btn2">
+                                        <i class="fas fa-play"></i> Story Video <br>Watch
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Countdown Timer -->
+    <div class="count-down-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="count-down-time d-flex justify-content-center">
+                        <div class="single-count text-center">
+                            <span class="count-digit" id="days">96</span>
+                            <p class="count-text">Days</p>
+                        </div>
+                        <div class="single-count text-center">
+                            <span class="count-digit" id="hours">15</span>
+                            <p class="count-text">Hrs</p>
+                        </div>
+                        <div class="single-count text-center">
+                            <span class="count-digit" id="minutes">07</span>
+                            <p class="count-text">Min</p>
+                        </div>
+                        <div class="single-count text-center">
+                            <span class="count-digit" id="seconds">02</span>
+                            <p class="count-text">Sec</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Area -->
+    <div class="about-area section-padding30">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-10">
+                    <!-- About Left -->
+                    <div class="about-caption mb-50">
+                        <div class="section-tittle mb-35">
+                            <span>About Conference</span>
+                            <h2>The Biggest Digital Conference.</h2>
+                        </div>
+                        <p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.rere arge many variations ohf passages of sorem gpsum ilable.</p>
+                        <p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in.</p>
+                        <div class="about-info">
+                            <div class="single-info">
+                                <h5>Where</h5>
+                                <p>New York, United States</p>
+                            </div>
+                            <div class="single-info">
+                                <h5>When</h5>
+                                <p>Jan. 21. 2021</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn hero-btn mt-20">Get Your Ticket</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-10">
+                    <!-- About Right -->
+                    <div class="about-img">
+                        <div class="about-font-img">
+                            <img src="https://themewagon.github.io/eventz/assets/img/gallery/about2.png" alt="">
+                        </div>
+                        <div class="about-back-img">
+                            <img src="https://themewagon.github.io/eventz/assets/img/gallery/about1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Speakers Section -->
+    <div class="team-area section-padding30 fix">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-55">
+                        <span>Our Speakers</span>
+                        <h2>The Most Important Speakers.</h2>
+                        <p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in.</p>
+                        <a href="#" class="btn hero-btn mt-20">View Speakers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Speaker 1 -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="https://themewagon.github.io/eventz/assets/img/gallery/team1.png" alt="Jessica Brown">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="#">Jesscia brown</a></h3>
+                            <p>Co Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Speaker 2 -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="https://themewagon.github.io/eventz/assets/img/gallery/team2.png" alt="">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="#">Jesscia brown</a></h3>
+                            <p>Co Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Speaker 3 -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="https://themewagon.github.io/eventz/assets/img/gallery/team3.png" alt="">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="#">brown Rulsan</a></h3>
+                            <p>Co Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Speaker 4 -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="https://themewagon.github.io/eventz/assets/img/gallery/team4.png" alt="">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="#">Jesscia brown</a></h3>
+                            <p>Co Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Speaker 5 -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="https://themewagon.github.io/eventz/assets/img/gallery/team5.png" alt="">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="#">Jesscia brown</a></h3>
+                            <p>Co Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Speaker 6 -->
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="https://themewagon.github.io/eventz/assets/img/gallery/team6.png" alt="">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="#">wndfert droit</a></h3>
+                            <p>Co Founder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schedule Area -->
+    <div class="schedule-area section-padding30">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-55">
+                        <span>Program Agenda</span>
+                        <h2>Event Schedule</h2>
+                        <p>There arge many variations ohf passages of sorem gp ilable, but the majority have ssorem gp iluffe.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Schedule Tabs -->
+            <div class="row">
+                <div class="col-xl-12">
+                    <ul class="nav sample-text-tab justify-content-center mb-50" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">Day - 01</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab">Day - 02</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab">Day - 03</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-dinner-tab" data-toggle="tab" href="#nav-dinner" role="tab">Day - 04</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel">
+                            <div class="single-schedule mb-30">
+                                <div class="schedule-time">
+                                    <p>8:30 AM - 9:30 AM</p>
+                                </div>
+                                <div class="schedule-body">
+                                    <h3><a href="#">Snackes</a></h3>
+                                    <p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p>
+                                </div>
+                            </div>
+                            <div class="single-schedule mb-30">
+                                <div class="schedule-time">
+                                    <p>8:30 AM - 9:30 AM</p>
+                                </div>
+                                <div class="schedule-body">
+                                    <h3><a href="#">Opening conference</a></h3>
+                                    <p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p>
+                                </div>
+                            </div>
+                            <div class="single-schedule mb-30">
+                                <div class="schedule-time">
+                                    <p>8:30 AM - 9:30 AM</p>
+                                </div>
+                                <div class="schedule-body">
+                                    <h3><a href="#">Conference ending</a></h3>
+                                    <p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel">
+                            <div class="single-schedule mb-30">
+                                <div class="schedule-time"><p>8:30 AM - 9:30 AM</p></div>
+                                <div class="schedule-body"><h3><a href="#">Snackes</a></h3><p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p></div>
+                            </div>
+                            <div class="single-schedule mb-30">
+                                <div class="schedule-time"><p>8:30 AM - 9:30 AM</p></div>
+                                <div class="schedule-body"><h3><a href="#">Opening conference</a></h3><p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p></div>
+                            </div>
+                            <div class="single-schedule mb-30">
+                                <div class="schedule-time"><p>8:30 AM - 9:30 AM</p></div>
+                                <div class="schedule-body"><h3><a href="#">Conference ending</a></h3><p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel">
+                            <div class="single-schedule mb-30">
+                                <div class="schedule-time"><p>8:30 AM - 9:30 AM</p></div>
+                                <div class="schedule-body"><h3><a href="#">Snackes</a></h3><p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p></div>
+                            </div>
+                            <div class="single-schedule mb-30">
+                                <div class="schedule-time"><p>8:30 AM - 9:30 AM</p></div>
+                                <div class="schedule-body"><h3><a href="#">Opening conference</a></h3><p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p></div>
+                            </div>
+                            <div class="single-schedule mb-30">
+                                <div class="schedule-time"><p>8:30 AM - 9:30 AM</p></div>
+                                <div class="schedule-body"><h3><a href="#">Conference ending</a></h3><p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-dinner" role="tabpanel">
+                            <div class="single-schedule mb-30">
+                                <div class="schedule-time"><p>8:30 AM - 9:30 AM</p></div>
+                                <div class="schedule-body"><h3><a href="#">Snackes</a></h3><p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p></div>
+                            </div>
+                            <div class="single-schedule mb-30">
+                                <div class="schedule-time"><p>8:30 AM - 9:30 AM</p></div>
+                                <div class="schedule-body"><h3><a href="#">Opening conference</a></h3><p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p></div>
+                            </div>
+                            <div class="single-schedule mb-30">
+                                <div class="schedule-time"><p>8:30 AM - 9:30 AM</p></div>
+                                <div class="schedule-body"><h3><a href="#">Conference ending</a></h3><p>There arge many variations ohf passages of sorem gpsum ilable, but the majority have suffered alteration in some form, by ected humour, or randomised words whi.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Area -->
+    <div class="pricing-area section-padding30 fix">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-55">
+                        <span>Ticket Plans</span>
+                        <h2>Program Pricing</h2>
+                        <p>There arge many variations ohf passages of sorem gp ilable, but the majority have ssorem gp iluffe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Price Card 1 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-pricing mb-30">
+                        <div class="pricing-top">
+                            <p>Day - 1</p>
+                            <h2>$ <span>05</span>.00</h2>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Increase traffic 50%</li>
+                                <li><i class="fas fa-check"></i> E-mail support</li>
+                                <li><i class="fas fa-check"></i> 10 Free Optimization</li>
+                                <li><i class="fas fa-check"></i> 24/7 support</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-btn">
+                            <a href="services.html" class="btn hero-btn">View Speakers</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Price Card 2 (Featured) -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-pricing single-pricing2 mb-30">
+                        <div class="pricing-top">
+                            <p>Day - 1,2,3</p>
+                            <h2>$ <span>08</span>.00</h2>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Increase traffic 50%</li>
+                                <li><i class="fas fa-check"></i> E-mail support</li>
+                                <li><i class="fas fa-check"></i> 10 Free Optimization</li>
+                                <li><i class="fas fa-check"></i> 24/7 support</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-btn">
+                            <a href="services.html" class="btn hero-btn">View Speakers</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Price Card 3 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-pricing mb-30">
+                        <div class="pricing-top">
+                            <p>Day - 1,2</p>
+                            <h2>$ <span>06</span>.00</h2>
+                        </div>
+                        <div class="pricing-body">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Increase traffic 50%</li>
+                                <li><i class="fas fa-check"></i> E-mail support</li>
+                                <li><i class="fas fa-check"></i> 10 Free Optimization</li>
+                                <li><i class="fas fa-check"></i> 24/7 support</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-btn">
+                            <a href="services.html" class="btn hero-btn">View Speakers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sponsors Area -->
+    <div class="brand-area section-padding30">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-55">
+                        <span>Partners</span>
+                        <h2>Our Top General Sponsors.</h2>
+                        <p>There arge many variations ohf passages of sorem gp ilable, but the majority have ssorem gp iluffe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="brand-active owl-carousel">
+                <div class="single-brand">
+                    <img src="https://themewagon.github.io/eventz/assets/img/gallery/cisco_brand.png" alt="Sponsor 1">
+                </div>
+                <div class="single-brand">
+                    <img src="https://themewagon.github.io/eventz/assets/img/gallery/cisco_brand2.png" alt="Sponsor 2">
+                </div>
+                <div class="single-brand">
+                    <img src="https://themewagon.github.io/eventz/assets/img/gallery/cisco_brand3.png" alt="Sponsor 3">
+                </div>
+                <div class="single-brand">
+                    <img src="https://themewagon.github.io/eventz/assets/img/gallery/cisco_brand4.png" alt="Sponsor 4">
+                </div>
+                <div class="single-brand">
+                    <img src="https://themewagon.github.io/eventz/assets/img/gallery/cisco_brand5.png" alt="Sponsor 5">
+                </div>
+                <div class="single-brand">
+                    <img src="https://themewagon.github.io/eventz/assets/img/gallery/cisco_brand6.png" alt="Sponsor 6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Area -->
+    <div class="blog-area section-padding30">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-55">
+                        <span>Latest News</span>
+                        <h2>News From Blog</h2>
+                        <p>There arge many variations ohf passages of sorem gp ilable, but the majority have ssorem gp iluffe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Blog Card 1 -->
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="single-blog mb-30">
+                        <div class="blog-img">
+                            <img src="https://themewagon.github.io/eventz/assets/img/gallery/home-blog1.png" alt="Blog 1">
+                            <div class="blog-date">
+                                <span>24</span>
+                                <p>Now</p>
+                            </div>
+                        </div>
+                        <div class="blog-caption">
+                            <span>| Physics</span>
+                            <h3><a href="blog_details.html">Footprints in Time is perfect House in Kurashiki</a></h3>
+                            <a href="blog_details.html" class="read-more">Read more »</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Card 2 -->
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="single-blog mb-30">
+                        <div class="blog-img">
+                            <img src="https://themewagon.github.io/eventz/assets/img/gallery/home-blog2.png" alt="Blog 2">
+                            <div class="blog-date">
+                                <span>24</span>
+                                <p>Now</p>
+                            </div>
+                        </div>
+                        <div class="blog-caption">
+                            <span>| Physics</span>
+                            <h3><a href="blog_details.html">Footprints in Time is perfect House in Kurashiki</a></h3>
+                            <a href="blog_details.html" class="read-more">Read more »</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-area footer-bg">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="footer-title">
+                                <h3>About Us</h3>
+                            </div>
+                            <div class="footer-text">
+                                <p>Heaven frucvitful doesn't cover lesser dvsays appear creeping seasons so behold.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="footer-title">
+                                <h3>Contact Info</h3>
+                            </div>
+                            <div class="footer-text">
+                                <p><i class="fas fa-map-marker-alt"></i> Address: Your address goes here, your demo address.</p>
+                                <p><a href="#"><i class="fas fa-phone"></i> Phone: +8880 44338899</a></p>
+                                <p><a href="#"><i class="fas fa-envelope"></i> Email: info@colorlib.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="footer-title">
+                                <h3>Important Link</h3>
+                            </div>
+                            <div class="footer-text">
+                                <ul>
+                                    <li><a href="#">View Project</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Testimonial</a></li>
+                                    <li><a href="#">Properties</a></li>
+                                    <li><a href="#">Support</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="footer-widget mb-30">
+                            <div class="footer-title">
+                                <h3>Newsletter</h3>
+                            </div>
+                            <div class="footer-text">
+                                <p>Heaven fruitful doesn't over lesser in days. Appear creeping.</p>
+                                <div class="newsletter-form">
+                                    <img src="https://themewagon.github.io/eventz/assets/img/gallery/form.png" alt="Newsletter">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom-area footer-bg">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                    <img src="https://themewagon.github.io/eventz/assets/img/logo/logo2_footer.png" alt="Footer Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="footer-count d-flex justify-content-center">
+                                <div class="single-count text-center">
+                                    <h3>5000<span>+</span></h3>
+                                    <p>Talented Hunter</p>
+                                </div>
+                                <div class="single-count text-center">
+                                    <h3>451</h3>
+                                    <p>Talented Hunter</p>
+                                </div>
+                                <div class="single-count text-center">
+                                    <h3>568</h3>
+                                    <p>Talented Hunter</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="footer-social f-right">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="footer-copy-right text-center">
+                                <p>Copyright &copy; All rights reserved | This template is made with <i class="fas fa-heart"></i> by <a href="https://colorlib.com">Colorlib</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <div id="back-to-top">
+        <a class="top" id="top" href="#"><i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

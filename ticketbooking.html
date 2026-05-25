@@ -1,0 +1,183 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Event HTML-5 Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img">
+                <img src="assets/img/logo/loder.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header>
+<div class="header-area">
+    <div class="main-header header-sticky">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <div class="col-xl-2 col-lg-2 col-md-1">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/img/logo/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-10 col-lg-10 col-md-10">
+                    <div class="menu-main d-flex justify-content-end align-items-center">
+
+                        <div class="main-menu d-none d-lg-block">
+                            <nav>
+                                <ul id="navigation">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="eventlisting.html">Events</a></li>
+                                    <li><a href="#speakers">Speakers</a></li>
+                                    <li><a href="countdown.html">Count UI</a></li>
+                                    <li><a href="ticketbooking.html">Ticket UI</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-right-btn ml-30 d-none d-lg-block">
+                            <a href="ticketbooking.html" class="btn header-btn">Get Your Ticket</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+<!-- HERO -->
+<div class="slider-area position-relative">
+    <div class="single-slider slider-height d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8">
+                    <div class="hero__caption">
+                        <span>Committed to success</span>
+                        <h1>Digital Conference For Designers</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- COUNTDOWN -->
+<div class="counter-section text-center py-5">
+    <h2>Event Starts In</h2>
+
+    <div id="countdown" style="font-size:30px; margin-top:20px;">
+        96 Days 15 Hrs 07 Min 02 Sec
+    </div>
+</div>
+
+<!-- BOOKING FORM -->
+<form id="ticketForm">
+
+    <div class="mb-3">
+        <label>Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+    </div>
+
+    <div class="mb-3">
+        <label>Email</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="mb-3">
+        <label>Select Event</label>
+        <select id="event" class="form-control" required>
+            <option value="">Choose event</option>
+            <option>Tech Conference</option>
+            <option>Design Summit</option>
+            <option>Business Meetup</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label>Number of Tickets</label>
+        <input type="number" id="tickets" class="form-control" min="1" max="10" required>
+    </div>
+
+    <button type="submit" class="btn btn-success w-100">
+        Book Now
+    </button>
+
+</form>
+
+<!-- Success Message -->
+<div id="successMsg" class="alert alert-success mt-3 d-none">
+    🎉 Booking Successful! We will contact you soon.
+</div>
+
+<!-- JS -->
+<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.slicknav.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+document.getElementById("ticketForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // stop page reload
+
+    // Get values
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let event = document.getElementById("event").value;
+    let tickets = document.getElementById("tickets").value;
+
+    // Basic validation alert
+    if(name === "" || email === "" || event === "" || tickets === "") {
+        alert("⚠ Please fill all fields!");
+        return;
+    }
+
+    // Success message
+    document.getElementById("successMsg").classList.remove("d-none");
+
+    // Popup alert
+    alert("🎉 Booking Successful for " + event);
+
+    // Reset form
+    document.getElementById("ticketForm").reset();
+});
+</script>
+</body>
+</html>

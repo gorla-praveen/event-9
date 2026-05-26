@@ -61,17 +61,17 @@
                             <nav>
                                 <ul id="navigation">
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="eventlisting.html">Events</a></li>
+                                    <li><a href="events.html">Events</a></li>
                                     <li><a href="#speakers">Speakers</a></li>
                                     <li><a href="countdown.html">Count UI</a></li>
-                                    <li><a href="ticketbooking.html">Ticket UI</a></li>
+                                    <li><a href="tickets.html">Ticket UI</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
 
                         <div class="header-right-btn ml-30 d-none d-lg-block">
-                            <a href="ticketbooking.html" class="btn header-btn">Get Your Ticket</a>
+                            <a href="tickets.html" class="btn header-btn">Get Your Ticket</a>
                         </div>
 
                     </div>
@@ -109,38 +109,60 @@
 </div>
 
 <!-- BOOKING FORM -->
-<form id="ticketForm">
+<!-- BOOKING FORM -->
+<section class="py-5">
+    <div class="container">
 
-    <div class="mb-3">
-        <label>Name</label>
-        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+        <div class="row justify-content-center">
+
+            <div class="col-lg-6 col-md-8">
+
+                <form id="ticketForm" class="p-4 shadow rounded bg-white">
+
+                    <h4 class="mb-4 text-center">Ticket Booking Form</h4>
+
+                    <div class="mb-3">
+                        <label>Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Select Event</label>
+                        <select id="event" class="form-control" required>
+                            <option value="">Choose event</option>
+                            <option>Tech Conference</option>
+                            <option>Design Summit</option>
+                            <option>Business Meetup</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label>Number of Tickets</label>
+                        <input type="number" id="tickets" class="form-control" min="1" max="10" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">
+                        Book Now
+                    </button>
+
+                </form>
+
+                <!-- Success Message -->
+                <div id="successMsg" class="alert alert-success mt-3 d-none text-center">
+                    🎉 Booking Successful! We will contact you soon.
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="mb-3">
-        <label>Email</label>
-        <input type="email" id="email" class="form-control" placeholder="Enter email" required>
-    </div>
-
-    <div class="mb-3">
-        <label>Select Event</label>
-        <select id="event" class="form-control" required>
-            <option value="">Choose event</option>
-            <option>Tech Conference</option>
-            <option>Design Summit</option>
-            <option>Business Meetup</option>
-        </select>
-    </div>
-
-    <div class="mb-3">
-        <label>Number of Tickets</label>
-        <input type="number" id="tickets" class="form-control" min="1" max="10" required>
-    </div>
-
-    <button type="submit" class="btn btn-success w-100">
-        Book Now
-    </button>
-
-</form>
+</section>
 
 <!-- Success Message -->
 <div id="successMsg" class="alert alert-success mt-3 d-none">

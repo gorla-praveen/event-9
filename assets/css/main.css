@@ -69,3 +69,141 @@
         padding-right: 15px;
     }
 }
+/* =========================
+   GLOBAL RESPONSIVE FIX
+========================= */
+
+body {
+    overflow-x: hidden;
+}
+
+/* Container spacing fix */
+.container {
+    max-width: 1200px;
+}
+
+/* =========================
+   HERO RESPONSIVE
+========================= */
+
+.hero__caption h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .hero__caption h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__caption h1 {
+        font-size: 24px;
+    }
+}
+
+/* =========================
+   FORM CENTERING (IMPORTANT)
+========================= */
+
+form#ticketForm,
+#ticketForm {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Inputs full width */
+#ticketForm input,
+#ticketForm select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+/* Button full width */
+#ticketForm button {
+    width: 100%;
+    padding: 12px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .header-area .menu-main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .slider-area {
+        text-align: center;
+    }
+
+    .hero__caption {
+        text-align: center;
+    }
+
+    form#ticketForm {
+        margin: 20px;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero__caption span {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+.about-img {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+/* BACK IMAGE */
+.about-back-img img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* FRONT IMAGE */
+.about-font-img {
+  position: absolute;
+  bottom: -40px;
+  right: -30px;
+  width: 60%;
+}
+
+.about-font-img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 768px) {
+  .about-font-img {
+    position: static;
+    width: 100%;
+    margin-top: 15px;
+  }
+}
